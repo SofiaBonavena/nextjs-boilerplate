@@ -23,7 +23,7 @@ export default function Home() {
     */}
       <NavBar></NavBar>
       <Hero></Hero>
-      <Title>BienvenidosHOLA</Title>
+      <Title>BienvenidosHOLAAAA todo bien</Title>
       <About />
       <Subtitle>UMAI</Subtitle>
       <Title>Proyectos</Title>
