@@ -1,9 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar/NavBar';
 import 'bulma/css/bulma.css';
-
 import Hero from '../components/Hero/Hero';
-import Grid from '../components/Grid/Grid';
 import Title from '../components/Title/Title';
 import Footer from '../components/Footer/Footer';
 import Subtitle from '../components/Subtitle/Subtitle';
@@ -25,7 +23,7 @@ export default function Home() {
     */}
       <NavBar></NavBar>
       <Hero></Hero>
-      <Title>Bienvenidos</Title>
+      <Title>BienvenidosHOLA</Title>
       <About />
       <Subtitle>UMAI</Subtitle>
       <Title>Proyectos</Title>

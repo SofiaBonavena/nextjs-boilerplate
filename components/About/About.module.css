@@ -23,6 +23,10 @@
         font-family: Montserrat;
     }
     
+    .container1 {
+        display: none;
+    }
+
     /* Significa que este NO se ve */
     .hero-containerdesktop{
         display: none;

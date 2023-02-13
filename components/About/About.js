@@ -13,7 +13,7 @@ const About = () => {
               <div className="column"></div>
               <div className="column">
                 <p className={styles['textdesktop']}>
-                  En esta web encontrarás proyectos realizados por estudiantes
+                  HOLAEn esta web encontrarás proyectos realizados por estudiantes
                   de UMAI de la carrera de Tecnología Multimedial
                 </p>
               </div>
@@ -29,7 +29,7 @@ const About = () => {
             <div className="column"></div>
             <div className="column">
               <p className={styles['textmobile']}>
-                En esta web encontrarás proyectos realizados por estudiantes de
+                HOLAEn esta web encontrarás proyectos realizados por estudiantes de
                 UMAI de la carrera de Tecnología Multimedial
               </p>
             </div>
