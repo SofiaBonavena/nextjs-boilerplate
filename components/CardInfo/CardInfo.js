@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { getFirestore } from '../../utils/firebase';
-//import styles from './Products.module.css';
 import { useRouter } from 'next/router';
 import Card from '../Card/Card';
 

@@ -1,0 +1,51 @@
+.container {
+    background: linear-gradient(
+        89deg,
+        rgba(111, 41, 119, 1) 25%,
+        rgba(164, 81, 173, 1) 84%
+      );
+    margin: 50px auto;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    padding-bottom: 5rem;
+}
+
+.my-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact{
+    font-size: 150%;
+    color: #E77D2D;
+    margin-top: 30px;
+    font-weight: 600;
+} 
+
+.error{
+    color: red;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* Field*/
+.field {
+    padding-left:2rem;
+    width: 50%;
+    height: 2.5rem;
+    margin: 20px;
+    background-color: #a97fad;
+    border: transparent;
+    color: white;
+}
+
+/* button*/
+/* .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    justify-content: center;
+} */
+
+

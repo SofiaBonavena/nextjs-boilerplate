@@ -18,6 +18,23 @@ a {
   box-sizing: border-box;
 }
 
+button {
+  width: 25%;
+  background-color: white;
+  color: #6F2977;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-bottom: 15px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

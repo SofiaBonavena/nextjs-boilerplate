@@ -10,6 +10,7 @@ import About from '../components/About/About';
 import { FavContext } from '../contexts/FavContext';
 import { useContext } from 'react';
 import ColumnNosotros from '../components/ColumnNosotros/ColumnNosotros';
+import Newsletter from '../components/Newsletter/Newsletter';
 
 export default function Home() {
   const { fav, setFav } = useContext(FavContext);
@@ -23,11 +24,12 @@ export default function Home() {
     */}
       <NavBar></NavBar>
       <Hero></Hero>
-      <Title>BienvenidosHOLAAAA todo bien</Title>
+      <Title>Bienvenidos</Title>
       <About />
       <Subtitle>UMAI</Subtitle>
       <Title>Proyectos</Title>
       <CardInfo />
+      <Newsletter />
       <Subtitle>Conocenos</Subtitle>
       <Title>Nosotros</Title>
       <ColumnNosotros />

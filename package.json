@@ -13,12 +13,14 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "firebase": "^8.7.1",
+    "formik": "^2.2.9",
     "lint-staged": "^13.0.3",
     "next": "12.2.4",
     "pre-commit": "^1.2.2",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sweetalert2": "^11.7.1",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
