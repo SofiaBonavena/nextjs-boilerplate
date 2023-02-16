@@ -56,13 +56,15 @@ const Newsletter = () => {
                   name="email"
                 />
                 <br />
-                <button
-                  className={`${styles['button']}`} 
-                  type="submit"
-                  disabled={isSubmitting}
-                >
-                  SUSCRIBIRME
-                </button>
+                <div>
+                  <button
+                    className={`${styles['button']}`} 
+                    type="submit"
+                    disabled={isSubmitting}
+                  >
+                    SUSCRIBIRME
+                  </button>
+                </div>
                 <br />
                 <ErrorMessage
                   className={`${styles['error']}`}

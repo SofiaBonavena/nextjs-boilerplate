@@ -24,9 +24,6 @@ const Card = ({ title, id, student, img, ano, desc }) => {
       <div className={`card-content ${styles['cardconteiner']}`}>
         <div className="media">
           <div className={`media-content ${styles['mediacontainer']}`}>
-            <div className={styles['favs']}>
-              <span className={`tag ${styles['tagg']}`}>Programación</span>
-            </div>
             <p className={`title is-4 ${styles['title']}`}>{title}</p>
           </div>
         </div>

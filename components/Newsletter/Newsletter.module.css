@@ -5,11 +5,11 @@
         rgba(164, 81, 173, 1) 84%
       );
     margin: 50px auto;
-    padding-top: 2%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 10%;
     padding-right: 10%;
     height: 100%;
-    padding-bottom: 5rem;
 }
 
 .my-form {
