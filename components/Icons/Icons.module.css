@@ -1,0 +1,38 @@
+.container  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    
+}
+
+.container_icono_disenio {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    animation: bounce 5s;
+}
+
+.container_icono_prog {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+}
+
+
+.texto_icono {
+    color: #E77D2D;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+/* Mobile */
+@media only screen and (max-width: 769px) {
+    .container {
+        flex-direction: column;
+    }
+
+}

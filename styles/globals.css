@@ -45,11 +45,52 @@ button {
   }
 }
 
-.grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-column-gap: 40px; grid-row-gap: 40px; padding: 70px 0;  }
+/* GRID RESPONSIVE */
+
+  /* Celular  */
+  @media (max-width: 600px) {
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      grid-column-gap: 40px; 
+      grid-row-gap: 40px; 
+      padding: 70px 0;  
+      justify-content: center;
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 600px) {
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(8, 1fr); 
+      grid-column-gap: 40px; 
+      grid-row-gap: 40px; 
+      padding: 70px 0;  
+      justify-content: center;
+    }
+  }
+
+  /* Laptop/computadora */
+  @media (min-width: 768px) {
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(12, 1fr); 
+      grid-column-gap: 40px; 
+      grid-row-gap: 40px; 
+      padding: 70px 0;  
+    }
+}
+
+
 .row_gap_20 { grid-row-gap: 20px;}
 
 .inner {
-  max-width: 1240px; margin: auto; position: relative; align-content: center;
+  max-width: 1240px; 
+  margin: auto; 
+  position: relative; 
+  align-content: center;
+  justify-content: center;
 }
 ​
 .long_gap { grid-column-gap: 110px; }

@@ -1,42 +1,23 @@
-import { isAbsoluteUrl } from 'next/dist/shared/lib/utils';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../About/About.module.css';
+import Title from '../Title/Title';
+import Icons from '../Icons/Icons';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+      }, []);
   return (
-    <section>
-      {/* Este HERO se ve en DESKTOP */}
-      <div className={styles['hero-containerdesktop']}>
-        <div className={`hero is-large ${styles['container1']}`}>
-          <div className="hero-body">
-            <div className="columns is-variable">
-              <div className="column"></div>
-              <div className="column">
-                <p className={styles['textdesktop']}>
-                  En esta web encontrarás proyectos realizados por estudiantes
-                  de UMAI de la carrera de Tecnología Multimedial
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Este hero se ve en MOBILE*/}
-      <div className={styles['hero-containermobile']}>
-        <div className="hero-body">
-          <div className="columns is-variable">
-            <div className="column"></div>
-            <div className="column">
-              <p className={styles['textmobile']}>
-                En esta web encontrarás proyectos realizados por estudiantes de
-                UMAI de la carrera de Tecnología Multimedial
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className={styles['container']} data-aos="fade-up">
+      <Title>Bienvenidos</Title>
+      <p className={styles['text_about']}>
+        En esta web encontrarás proyectos realizados por estudiantes de UMAI de
+        la carrera de Tecnología Multimedial
+      </p>
+      <Icons></Icons>
+    </div>
   );
 };
 

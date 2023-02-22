@@ -1,98 +1,31 @@
-.container1{
-    background-image: url('/assets/imagenAbajo2.svg');
-    width: 100%;
-    background-position: 10% 55%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-.hero-body{
-    padding: 18rem 7rem;
+.container {
     height: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(42, 16, 45, 1) 15%,
+        rgba(111, 41, 119, 0.86) 47%,
+        rgba(52, 19, 56, 1) 79%,
+        rgba(0, 0, 0, 1) 100%
+      );
+      /* background-blend-mode: normal; */
+      
+}
+
+.text_about {
+    color: #ffffff;
+    font-size: 1em;
     text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    font-family: Montserrat;
+    margin-top: 30px;
 }
 
-@media only screen and (max-width: 769px) {
-    .textmobile{
-        color: #E77D2D;
-        font-size: 1.3em;
-        text-align: center;
-        margin: 0 auto;
-        width: 80%;
-        font-family: Montserrat;
-    }
-    
-    .container1 {
-        display: none;
-    }
-
-    /* Significa que este NO se ve */
-    .hero-containerdesktop{
-        display: none;
-    }
-    
-    /* Significa que este se ve */
-    .hero-containermobile{
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .textdesktop{
-        color: #E77D2D;
-        font-size: 1em;
-        text-align: center;
-        margin: 0 auto;
-        width: 50%;
-        font-family: Montserrat;
-    }
-
-    /* Significa que este se ve */
-    .hero-containerdesktop{
-        display: block;
-    }
-
-    /* Significa que este NO se ve */
-    .hero-containermobile{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 769px) {
-    .textdesktop{
-        color: #E77D2D;
-        font-size: 1em;
-        text-align: center;
-        margin: 0 auto;
-        width: 50%;
-        font-family: Montserrat;
-    }
-
-    .textmobile{
-        font-size: 1em !important;
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .textdesktop{
-        color: #E77D2D;
-        font-size: 1.3em;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        font-family: Montserrat;
-    }
-}
-
-
-@media only screen and (min-width: 1023px) {
-    .textdesktop{
-        color: #E77D2D;
-        font-size: 1.8em;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        font-family: Montserrat;
+@media only screen and (min-width: 1200px) {
+    .text_about {
+        font-size: 1.5em;
     }
 }
