@@ -7,7 +7,6 @@ import Projects_disenio from '../components/Projects_disenio/Projects_disenio';
 import Newsletter from '../components/Newsletter/Newsletter';
 import Footer from '../components/Footer/Footer';
 
-
 export default function Diseno() {
   return (
     <>

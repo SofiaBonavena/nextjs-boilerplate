@@ -28,17 +28,21 @@ const ProductPage = () => {
     };
     getProduct();
   }, [id]);
-  
+
   return (
     <>
       {!loading && (
         <div>
-          <Image src={product.pictureUrl} width={200} height={200} />
+          <Image
+            src={product.pictureUrl}
+            width={200}
+            height={200}
+            alt={loading}
+          />
         </div>
       )}
     </>
   );
 };
-
 
 export default ProductPage;

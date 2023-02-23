@@ -20,5 +20,4 @@ const getFirestore = () => firebase.firestore();
 
 const getDate = () => firebase.firestore.Timestamp.fromDate(new Date());
 
-
 export { getFirebase, getFirestore, getDate };
