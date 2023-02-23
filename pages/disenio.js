@@ -1,11 +1,12 @@
 import React from 'react';
-import NavBar from '../components/NavBar/NavBar';
 import 'bulma/css/bulma.css';
-import Grid from '../components/Grid/Grid';
-import Title from '../components/Title/Title';
-import Footer from '../components/Footer/Footer';
+import NavBar from '../components/NavBar/NavBar';
 import Hero_4 from '../components/Hero_4/Hero_4';
-import CardInfoDisenio from '../components/CardInfoDisenio/CardInfoDisenio';
+import Title from '../components/Title/Title';
+import Projects_disenio from '../components/Projects_disenio/Projects_disenio';
+import Newsletter from '../components/Newsletter/Newsletter';
+import Footer from '../components/Footer/Footer';
+
 
 export default function Diseno() {
   return (
@@ -13,7 +14,8 @@ export default function Diseno() {
       <NavBar></NavBar>
       <Hero_4></Hero_4>
       <Title>Diseño</Title>
-      <CardInfoDisenio />
+      <Projects_disenio />
+      <Newsletter />
       <Footer></Footer>
     </>
   );

@@ -12,8 +12,11 @@ const Icons = () => {
 
   return (
     <div className={styles['container']}>
-      <div className={styles['container_icono_disenio']} data-aos="zoom-in-right">
-        <Link href="/">
+      <div
+        className={styles['container_icono_disenio']}
+        data-aos="zoom-in-right"
+      >
+        <Link href="/disenio">
           <Image
             src="/assets/icono_disenio.svg"
             alt="Icono diseño"
@@ -24,7 +27,7 @@ const Icons = () => {
         <p className={styles['texto_icono']}>Diseño</p>
       </div>
       <div className={styles['container_icono_prog']} data-aos="zoom-in-left">
-        <Link href="/">
+        <Link href="/programacion">
           <Image
             src="/assets/icono_prog.svg"
             alt="Icono programación"

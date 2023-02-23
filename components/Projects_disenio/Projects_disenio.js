@@ -1,20 +1,25 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { getFirestore } from '../../utils/firebase';
 import { useRouter } from 'next/router';
-import Card from '../Card/Card';
+import Cardinfo_projects from '../Cardinfo_projects/Cardinfo_projects';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-const Products = () => {
-  const [products, setProducts] = useState([]);
+const Projects_disenio = () => {
+  const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
     setLoading(true);
-    const getProducts = async () => {
+    const getProjects = async () => {
       try {
         const db = getFirestore();
         const itemsCollection = db.collection(`projects`);
-        const itemSnapshot = await itemsCollection.get();
+        const itemSnapshot = await itemsCollection
+          .where(`catId`, `==`, `U2oA4DNnLRnoEbjvG0s4`)
+          .get();
 
         const categoryItems = db.collection(`category`);
         const categorySnapshot = await categoryItems.get();
@@ -22,26 +27,30 @@ const Products = () => {
         const items = itemSnapshot.docs.map((doc) => {
           return { id: doc.id, ...doc.data() };
         });
-        setProducts(items);
+        setProjects(items);
         setLoading(false);
       } catch (error) {
         console.log(error);
       }
     };
-    getProducts();
+    getProjects();
   }, []);
 
-  const goToProduct = (id) => router.push(`/cardsProjects/${id}`);
+  const goToProjects = (id) => router.push(`/cardsProjects/${id}`);
+
+  // Animacion
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
     <div className={`grid inner`}>
       {!loading &&
-        products.map(({ id, title, student, catId, ano, img, desc }) => (
-          <div key={id} className={`col_4`}>
-            <Card
+        projects.map(({ id, title, student, catId, ano, img, desc }) => (
+          <div key={id} className={`col_4`} data-aos="flip-left">
+            <Cardinfo_projects
               title={title}
               id={id}
-              catId={catId}
               student={student}
               img={img}
               ano={ano}
@@ -55,4 +64,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Projects_disenio;

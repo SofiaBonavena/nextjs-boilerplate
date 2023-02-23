@@ -3,17 +3,16 @@ import NavBar from '../components/NavBar/NavBar';
 import 'bulma/css/bulma.css';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
-import Title from '../components/Title/Title';
-import Footer from '../components/Footer/Footer';
-import Subtitle from '../components/Subtitle/Subtitle';
-import CardInfo from '../components/CardInfo/CardInfo';
-import { FavContext } from '../contexts/FavContext';
-import { useContext } from 'react';
-import ColumnNosotros from '../components/ColumnNosotros/ColumnNosotros';
+import Projects from '../components/Projects/Projects';
+// import { FavContext } from '../contexts/FavContext';
+// import { useContext } from 'react';
+import Nosotros from '../components/Nosotros/Nosotros';
 import Newsletter from '../components/Newsletter/Newsletter';
+import Footer from '../components/Footer/Footer';
+
 
 export default function Home() {
-  const { fav, setFav } = useContext(FavContext);
+  // const { fav, setFav } = useContext(FavContext);
 
   return (
     <>
@@ -22,16 +21,12 @@ export default function Home() {
         <p key={item.id}>{item.name} </p>
     ))} 
     */}
-      <NavBar></NavBar>
-      <Hero></Hero>
-      <About></About>
-      <Subtitle>UMAI</Subtitle>
-      <Title>Proyectos</Title>
-      <CardInfo />
+      <NavBar />
+      <Hero />
+      <About />
+      <Projects />
       <Newsletter />
-      <Subtitle>Conocenos</Subtitle>
-      <Title>Nosotros</Title>
-      <ColumnNosotros />
+      <Nosotros />
       <Footer></Footer>
     </>
   );

@@ -6,9 +6,9 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const About = () => {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-      }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className={styles['container']} data-aos="fade-up">
       <Title>Bienvenidos</Title>

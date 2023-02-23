@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Newsletter.module.css';
 import Swal from 'sweetalert2';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Title from '../Title/Title';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Newsletter = () => {
   const successAlert = (mail) => {
@@ -17,6 +19,11 @@ const Newsletter = () => {
   };
 
   const [suscrito, setSuscrito] = useState(false);
+
+  // Animacion
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div>
@@ -43,11 +50,11 @@ const Newsletter = () => {
           }}
         >
           {({ isSubmitting }) => (
-            <div className={`${styles['container']}`}>
+            <div className={`${styles['container']}`} data-aos="fade-up">
               <Title>Newsletter</Title>
               <Form className={`${styles['my-form']}`}>
                 <p className={`${styles['contact']}`}>
-                  ¡Enterate de los nuevos proyectos <br/> realizados en UMAI!
+                  ¡Enterate de los nuevos proyectos <br /> realizados en UMAI!
                 </p>
                 <Field
                   className={`${styles['field']}`}
@@ -58,7 +65,7 @@ const Newsletter = () => {
                 <br />
                 <div>
                   <button
-                    className={`${styles['button']}`} 
+                    className={`${styles['button']}`}
                     type="submit"
                     disabled={isSubmitting}
                   >

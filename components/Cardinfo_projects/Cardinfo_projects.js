@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import styles from './Card.module.css';
+import styles from './Cardinfo_projects.module.css';
 import Image from 'next/image';
 import Lightbox from '../Lightbox/Lightbox';
 
-const Card = ({ title, id, student, img, ano, desc }) => {
+const Cardinfo_projects = ({ title, id, student, img, ano, desc }) => {
   const [stateModal, setStateModal] = useState(false);
 
   const changeStateModal = () => {
@@ -43,4 +43,4 @@ const Card = ({ title, id, student, img, ano, desc }) => {
   );
 };
 
-export default Card;
+export default Cardinfo_projects;
