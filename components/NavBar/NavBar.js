@@ -23,14 +23,14 @@ const NavBar = () => (
       </Link>
       <div
         className={`navbar-burger ${styles['containermenu']}`}
-        data-target="navbarExampleTransparentExample"
+        data-target="navbarBasicExample"
       >
         <span className={`${styles['menu']}`}></span>
         <span className={`${styles['menu']}`}></span>
         <span className={`${styles['menu']}`}></span>
       </div>
     </div>
-    <div id="navbarExampleTransparentExample" className="navbar-menu">
+    <div id="navbarBasicExample" className="navbar-menu">
       <div className="navbar-end pr-6">
         <Link href="/disenio">
           <a className="navbar-item has-text-weight-bold">Diseño</a>

@@ -2,7 +2,24 @@
     box-shadow: 0 -3px 10px 1px whitesmoke;
 }
 
-@media (min-width: 481px) and (max-width: 1199px){
+.containerdiv {
+    background-color: black;
+    margin-left: 0;
+}
+.burger {
+    color: white;
+}
+
+.navbar_abierto {
+    background-color: black;
+    color: white;
+}
+
+.navbar-item {
+    color: white;
+}
+
+/* @media (min-width: 481px) and (max-width: 1199px){
     .containerdiv{
         width: 100%;
         padding-left: 0 !important;
@@ -56,4 +73,4 @@
         min-height: 90% !important;
         max-height: 90% !important;
     }
-  }
+  } */

@@ -50,8 +50,7 @@ const Projects = () => {
       <div className={`grid inner`}>
         {!loading &&
           projects.map(({ id, title, student, catId, ano, img, desc }) => (
-            <div key={id} className={`col_4`} data-aos="flip-left">
-              <Cardinfo_projects
+              <Cardinfo_projects key={id}
                 title={title}
                 id={id}
                 catId={catId}
@@ -60,8 +59,6 @@ const Projects = () => {
                 ano={ano}
                 desc={desc}
               />
-              {/* <button onClick={() => goToProduct(id)}>View project</button> */}
-            </div>
           ))}
         {loading && <p className={`loading`}>Loading...</p>}
       </div>

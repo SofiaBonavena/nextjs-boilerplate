@@ -15,7 +15,7 @@ const Cardinfo_projects = ({ title, id, student, img, ano, desc }) => {
   };
 
   return (
-    <div className={`card ${styles['container']}`}>
+    <div className={`card ${styles['container']} col_4`}>
       <div>
         <figure className={styles['figurecontainer']}>
           <Image src={img} alt="Placeholder image" width={1200} height={900} />
