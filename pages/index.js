@@ -16,11 +16,6 @@ export default function Home() {
 
   return (
     <>
-      {/* 
-    {fav.map((item) => (
-        <p key={item.id}>{item.name} </p>
-    ))} 
-    */}
       <NavBar />
       <Hero />
       <About />

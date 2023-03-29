@@ -17,7 +17,7 @@ const Projects_prog = () => {
         const db = getFirestore();
         const itemsCollection = db.collection(`projects`);
         const itemSnapshot = await itemsCollection
-          .where(`catId`, `==`, `p2Req05m7kO7NGYLQw89`)
+          .where(`catId`, `==`, `72inIQtsvxuN7iY7x1hA`)
           .get();
 
         const categoryItems = db.collection(`category`);
@@ -46,8 +46,7 @@ const Projects_prog = () => {
     <div className={`grid inner`}>
       {!loading &&
         projects.map(({ id, title, student, catId, ano, img, desc }) => (
-          <div key={id} className={`col_4`} data-aos="flip-left">
-            <Cardinfo_projects
+            <Cardinfo_projects key={id}
               title={title}
               id={id}
               student={student}
@@ -55,8 +54,6 @@ const Projects_prog = () => {
               ano={ano}
               desc={desc}
             />
-            {/* <button onClick={() => goToProduct(id)}>View project</button> */}
-          </div>
         ))}
       {loading && <p className={`col_12`}>Loading...</p>}
     </div>
