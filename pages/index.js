@@ -4,24 +4,22 @@ import 'bulma/css/bulma.css';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
-// import { FavContext } from '../contexts/FavContext';
-// import { useContext } from 'react';
 import Nosotros from '../components/Nosotros/Nosotros';
 import Newsletter from '../components/Newsletter/Newsletter';
+import Clientes from '../components/Clientes/Clientes';
 import Footer from '../components/Footer/Footer';
-
+import imageindex from '../public/assets/hero.png';
 
 export default function Home() {
-  // const { fav, setFav } = useContext(FavContext);
-
   return (
     <>
       <NavBar />
-      <Hero />
+      <Hero image={imageindex} />
       <About />
       <Projects />
-      <Newsletter />
+      <Clientes />
       <Nosotros />
+      <Newsletter />
       <Footer></Footer>
     </>
   );

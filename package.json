@@ -21,6 +21,7 @@
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-easy-marquee": "^1.2.4",
     "sweetalert2": "^11.7.1",
     "yarn": "^1.22.19"
   },

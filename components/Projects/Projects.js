@@ -50,15 +50,16 @@ const Projects = () => {
       <div className={`grid inner`}>
         {!loading &&
           projects.map(({ id, title, student, catId, ano, img, desc }) => (
-              <Cardinfo_projects key={id}
-                title={title}
-                id={id}
-                catId={catId}
-                student={student}
-                img={img}
-                ano={ano}
-                desc={desc}
-              />
+            <Cardinfo_projects
+              key={id}
+              title={title}
+              id={id}
+              catId={catId}
+              student={student}
+              img={img}
+              ano={ano}
+              desc={desc}
+            />
           ))}
         {loading && <p className={`loading`}>Loading...</p>}
       </div>
